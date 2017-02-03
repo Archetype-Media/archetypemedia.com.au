@@ -2,8 +2,14 @@
 title: Archetype Media
 timezone: Australia/Melbourne
 collections:
+  advertisers:
+    title: Advertisers
+    output: true
   posts:
     title: Posts
+    output: true
+  publishers:
+    title: Publishers
     output: true
   uploads:
     title: Uploads
