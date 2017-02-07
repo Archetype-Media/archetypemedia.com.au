@@ -1,7 +1,6 @@
 ---
 title: Archetype Media
 timezone: Australia/Melbourne
-livereload: true
 collections:
   advertisers:
     title: Advertisers
@@ -32,7 +31,8 @@ defaults:
     layout: page
 - scope:
     path: ''
-    type: 'work'
+    type: work
   values:
     link: ''
+livereload: true
 permalink: pretty
