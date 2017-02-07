@@ -1,0 +1,32 @@
+---
+title: Archetype Media
+timezone: Australia/Melbourne
+collections:
+  advertisers:
+    title: Advertisers
+    output: false
+  posts:
+    title: Posts
+    output: true
+  publishers:
+    title: Publishers
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+  work:
+    title: Work
+    output: false
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
