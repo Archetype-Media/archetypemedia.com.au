@@ -1,23 +1,22 @@
 ---
 title: Archetype Media
 timezone: Australia/Melbourne
-livereload: true
 collections:
   advertisers:
     title: Advertisers
-    output: true
+    output: false
   posts:
     title: Posts
     output: true
   publishers:
     title: Publishers
-    output: true
+    output: false
   uploads:
     title: Uploads
     output: true
   work:
     title: Work
-    output: true
+    output: false
 defaults:
 - scope:
     path: ''
@@ -30,9 +29,4 @@ defaults:
     type: pages
   values:
     layout: page
-- scope:
-    path: ''
-    type: 'work'
-  values:
-    link: ''
 permalink: pretty
