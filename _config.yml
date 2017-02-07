@@ -5,6 +5,9 @@ collections:
   advertisers:
     title: Advertisers
     output: false
+  contacts:
+    title: Contacts
+    output: false
   posts:
     title: Posts
     output: true
