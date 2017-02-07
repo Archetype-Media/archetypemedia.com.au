@@ -29,4 +29,10 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: work
+  values:
+    link: ''
+livereload: true
 permalink: pretty

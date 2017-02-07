@@ -1,6 +1,15 @@
-/**
- * Reset some basic elements
- */
+// Box model
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+// Set 
+html {
+  font-size: $base-font-size;
+}
+
+
+// Reset some basic elements
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -8,15 +17,12 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
-
 /**
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
+    font: #{$relative-font-size}/#{$base-line-height} $base-font-family;
+    color: $foreground-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -26,8 +32,9 @@ body {
     font-kerning: normal;
 }
 
-
-
+body * {
+  font-size: inherit;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -42,36 +49,28 @@ ul, ol, dl, figure,
 
 
 
-/**
- * Images
- */
+// Images
 img {
     max-width: 100%;
     vertical-align: middle;
+
+    a img {
+        border:none;
+    }
 }
 
 
-
-
-/**
- * Figures
- */
+// Figures
 figure > img {
     display: block;
 }
 
-figcaption {
-    font-size: $small-font-size;
-}
 
 
-
-
-/**
- * Lists
- */
+// Lists
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: 0;
+    list-style: none;
 }
 
 li {
@@ -92,8 +91,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
 /**
  * Links
  */
@@ -106,12 +103,10 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: $foreground-color;
         text-decoration: underline;
     }
 }
-
-
 
 
 /**
@@ -129,8 +124,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 
 /**
@@ -160,34 +153,7 @@ pre {
 }
 
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-
-/**
- * Clearfix
- */
+// Clearfix
 %clearfix {
 
     &:after {
@@ -196,8 +162,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 
 /**
