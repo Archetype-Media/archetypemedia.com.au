@@ -1,6 +1,7 @@
 ---
 title: Archetype Media
 timezone: Australia/Melbourne
+livereload: true
 collections:
   posts:
     title: Posts
