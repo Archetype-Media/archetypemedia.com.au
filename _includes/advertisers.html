@@ -1,0 +1,9 @@
+<div class="column partners__advertisers">
+  <h2 class="subhead">Frequent Advertisers</h2>
+  <ul class="partners__list">
+    {% assign advertisers = site.advertisers | sort: 'listing-priority' %}
+    {% for advertiser in advertisers %}
+      <li><a href="{{ advertiser.link }}">{{ advertiser.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
