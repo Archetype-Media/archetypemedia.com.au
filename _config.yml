@@ -37,5 +37,14 @@ defaults:
     type: work
   values:
     link: ''
+    image: ''
+    subtitle: ''
+- scope:
+    path: ''
+    type: publishers
+  values:
+    link: ''
+    image: ''
+    subtitle: ''
 livereload: true
 permalink: pretty
