@@ -8,9 +8,6 @@ collections:
   contacts:
     title: Contacts
     output: false
-  posts:
-    title: Posts
-    output: true
   publishers:
     title: Publishers
     output: false
@@ -46,5 +43,12 @@ defaults:
     link: ''
     image: ''
     subtitle: ''
+- scope:
+    path: ''
+    type: contacts
+  values:
+    title: ''
+    phone: ''
+    email: ''
 livereload: true
 permalink: pretty
