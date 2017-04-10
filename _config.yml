@@ -8,9 +8,6 @@ collections:
   contacts:
     title: Contacts
     output: false
-  posts:
-    title: Posts
-    output: true
   publishers:
     title: Publishers
     output: false
