@@ -11,19 +11,11 @@
       {% include intro.html %}
     </section><!-- section.intro -->
 
-  {% include work.html %}
+    {% include work.html %}
 
   <section class="section partners columns">
     {% include publishers.html %}
-    <div class="column partners__advertisers">
-      <h2 class="subhead">Frequent Advertisers</h2>
-      <ul class="partners__list">
-        {% assign advertisers = site.advertisers | sort: 'listing-priority' %}
-        {% for advertiser in advertisers %}
-          <li><a href="{{ advertiser.link }}">{{ advertiser.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+    {% include advertisers.html %}
   </section><!-- section.partners -->
 
     {% include footer.html %}
