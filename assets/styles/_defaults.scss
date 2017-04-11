@@ -10,7 +10,7 @@ html {
   font-family: 'Apercu';
 
   @media #{$breakpoint-sm} {
-    font-size: 1.5vw;
+    font-size: 0.7vh;
   }
 
   @media #{$breakpoint-lg} {
@@ -22,6 +22,12 @@ body {
   position: relative;
   font-size: 1.6rem;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
 }
 
 ul {

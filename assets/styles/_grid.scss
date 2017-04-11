@@ -71,6 +71,6 @@ $classes: (
   width: calc(100% / 8);
 
   @media #{$breakpoint-sm} {
-    width: calc(100% / 4);
+    width: calc(100% / 2);
   }
 }

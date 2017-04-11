@@ -1,5 +1,11 @@
 $classes: (
-  button: (),
+  button: (
+    padding: nth($spacings, 2) nth($spacings, 3),
+    font-size: $fontsize-2,
+    line-height: $lineheight-2,
+    background-color: map-get($colors, 'blue'),
+    color: map-get($colors, 'white'),
+  ),
 );
 
 @include all-sizes($classes);

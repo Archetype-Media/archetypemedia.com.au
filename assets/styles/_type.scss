@@ -15,6 +15,7 @@ $classes: (
   f1: (
     font-size: $fontsize-1,
     line-height: $lineheight-1,
+    letter-spacing: -0.025em,
   ),
   f2: (
     font-size: $fontsize-2,
@@ -34,6 +35,12 @@ $classes: (
 .headline em {
   font-style: normal;
   color: map-get($colors, 'gray');
+}
+
+ .white.headline em {
+  font-style: normal;
+  color: map-get($colors, 'white');
+  opacity: 0.6;
 }
 
 @include all-sizes($classes)

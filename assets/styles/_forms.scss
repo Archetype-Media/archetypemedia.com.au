@@ -1,14 +1,21 @@
 $classes: (
-  input: (
+  'input': (
     padding: nth($spacings, 2),
-    font-size: $fontsize-3,
-    line-height: $lineheight-3
+    font-size: $fontsize-2,
+    line-height: $lineheight-2,
+    border: 1px solid map-get($colors, 'gray'),
   ),
-  textarea: (
+  'textarea': (
     padding: nth($spacings, 2),
-    font-size: $fontsize-3,
-    line-height: $lineheight-3
+    font-size: $fontsize-2,
+    line-height: $lineheight-2,
+    min-height: nth($spacings, 7),
+    border: 1px solid map-get($colors, 'gray'),
   ),
+  'input:focus, textarea:focus': (
+    outline: none,
+    border-color: map-get($colors, 'blue'),
+  )
 );
 
 @include all-sizes($classes);

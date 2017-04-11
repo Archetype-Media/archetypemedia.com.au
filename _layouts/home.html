@@ -1,36 +1,25 @@
 ---
 layout: default
 ---
-
-<div class="mb-3">
-  <div class="overflow-hidden col-10 px-col-1 lg-px-col-2 py-4 purple f1 pt-1 headline">
-    {{ page.headline_text | markdownify }}
-  </div>
-  <div class="overflow-hidden col-10 px-col-1 lg-px-col-2 py-4  bg-blue f1 white">
-    <div class="ar16x9 bg-purple">
-    </div>
-  </div>
-  <div class="overflow-hidden col-10 px-col-1 lg-px-col-2 pt-4 purple f1 pt-1 headline">
-    {{ page.network_description | markdownify }}
-    <div class="overflow-hidden flex sm-block py-4 purple f1 headline">
-      <div class="flex col col-5 sm-col-10 mr-1 sm-mr-0 sm-mb-2 ar16x9 bg-blue white f1 center">
-        <div class="ma-auto px-4">Display</div>
-      </div>
-      <div class="flex col col-5 sm-col-10 ml-1 sm-ml-0 ar16x9 bg-blue white f1 center">
-        <div class="ma-auto px-4">Branded Content</div>
-      </div>
-    </div>
-  </div>
-  <div class="overflow-hidden mx-n1 fill-x flex sm-block pb-4 px-col-1 lg-px-col-2">
-    <div class="flex justify-between flex-wrap fill-x">
-      {% assign advertisers = site.advertisers | sort: 'position' %}
-      {% for advertiser in advertisers | limit: 16 %}
-        <div class="logo-col px-1 mb-2">
-          <div class="ar1x1 bg-purple white">
-            {{ advertiser.title }}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+<div class="my-5">
+  {% include headline.html headline=page.headline_text %}
+</div>
+{% include feature.html video=page.showreel %}
+<div class="py-5" id="network">
+  {% include headline.html headline=page.network_description %}
+  <!-- {% include blocks.html %} -->
+  {% assign publishers = site.publishers | sort: 'position' %}
+  {% include logos.html logos=publishers %}
+</div>
+<div class="py-5 bg-blue" id="partners">
+  {% include headline.html headline=page.partners_description inverted=true %}
+  <!-- {% include blocks.html %} -->
+  {% assign partners = site.partners | sort: 'position' %}
+  {% include logos.html logos=partners %}
+</div>
+<div class="py-5" id="contact">
+  {% include headline.html headline=page.contact_description %}
+  <div class="px-col-1 lg-px-col-2 pb-4" id="contact">
+    {% include contact.html email=site.email %}
   </div>
 </div>
