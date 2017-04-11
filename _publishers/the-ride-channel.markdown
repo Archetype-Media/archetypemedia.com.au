@@ -1,7 +1,7 @@
 ---
 title: The Ride Channel
 date: 2017-04-10 13:37:00 +10:00
-position: 6
+position: 7
 link: theridechannel.com
 ---
 
