@@ -22,9 +22,11 @@ layout: default
   </div>
   <div class="overflow-hidden mx-n1 fill-x flex sm-block pb-4 px-col-1 lg-px-col-2">
     <div class="flex justify-between flex-wrap fill-x">
-      {% for advertiser in site.advertisers | limit: 16 %}
+      {% assign advertisers = site.advertisers | sort: 'position' %}
+      {% for advertiser in advertisers | limit: 16 %}
         <div class="logo-col px-1 mb-2">
-          <div class="ar1x1 bg-purple">
+          <div class="ar1x1 bg-purple white">
+            {{ advertiser.title }}
           </div>
         </div>
       {% endfor %}
