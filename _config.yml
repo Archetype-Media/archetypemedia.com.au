@@ -45,14 +45,12 @@ defaults:
   values:
     link: ''
     image: ''
-    subtitle: ''
 - scope:
     path: ''
     type: partners
   values:
     link: ''
     image: ''
-    subtitle: ''
 - scope:
     path: ''
     type: contacts
