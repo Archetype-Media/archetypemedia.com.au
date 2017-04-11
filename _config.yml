@@ -1,16 +1,12 @@
 ---
 title: Archetype Media
 timezone: Australia/Melbourne
-address: "19–21 Johnston St<br/>Collingwood, VIC, 3065"
-phone: 0312 3456 7890
-email: sales@archetypemedia.com.au
-copyright: "Archetype Media<br/>Copyright &copy; 2017"
 collections:
-  partners:
-    title: Partners
-    output: false
   contacts:
     title: Contacts
+    output: false
+  partners:
+    title: Partners
     output: false
   posts:
     title: Posts
@@ -57,6 +53,10 @@ defaults:
     role: ''
     phone: ''
     email: ''
+address: 19–21 Johnston St<br/>Collingwood, VIC, 3065
+phone: 0312 3456 7890
+email: sales@archetypemedia.com.au
+copyright: Archetype Media<br/>Copyright &copy; 2017
 livereload: true
 permalink: pretty
 exclude:
