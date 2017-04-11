@@ -1,7 +1,7 @@
 ---
 title: Juxtapoz
 date: 2017-04-10 13:50:00 +10:00
-position: 9
+position: 10
 link: http://juxtapoz.com/
 ---
 
