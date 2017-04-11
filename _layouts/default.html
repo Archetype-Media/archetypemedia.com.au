@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo %}
+    <link rel="stylesheet" href="/assets/styles/app.css" />
+  </head>
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="overflow-hidden col-10 px-col-1 lg-px-col-2">
+      <div class="col mt-3" style="width: 13rem; height: 8.9893617021rem">
+        {% include svg/logo.svg %}
+      </div>
+      <div class="col col-right py-4 f3 sm-f2">
+        <a class="py-2 mr-3 no-underline purple" href="#partners">Partners</a>
+        <a class="py-2 no-underline purple" href="#contact">Contact</a>
       </div>
     </div>
-
-    {% include footer.html %}
-
+    {{ content }}
+    <div class="overflow-hidden col-10 px-col-1 lg-px-col-2 bg-purple py-4 f3 sm-f2">
+      <div class="col sm-col-10 sm-mb-3 sm-mr-0 mr-2" style="width: 13rem; height: 6.5rem">
+        {% include svg/logo-white.svg %}
+      </div>
+      <div class="col sm-col-10 sm-mb-3 sm-ml-0 col-2 ml-2 white">
+        {{ site.address }}
+      </div>
+      <div class="col sm-col-10 sm-mb-3 sm-ml-0 col-3 ml-2 white">
+        T: <a class="white no-underline" href="tel:{{ site.phone }}">{{ site.phone }}</a><br/>
+        E: <a class="white" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+      <div class="col sm-col-10 sm-mb-3 sm-mr-0 col-right white">
+        {{ site.copyright }}
+      </col>
+    </div>
   </body>
-
 </html>

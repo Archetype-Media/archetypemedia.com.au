@@ -2,11 +2,11 @@
 title: Archetype Media
 timezone: Australia/Melbourne
 collections:
-  advertisers:
-    title: Advertisers
-    output: false
   contacts:
     title: Contacts
+    output: false
+  partners:
+    title: Partners
     output: false
   posts:
     title: Posts
@@ -46,5 +46,41 @@ defaults:
     link: ''
     image: ''
     subtitle: ''
+- scope:
+    path: ''
+    type: partners
+  values:
+    link: ''
+    image: ''
+    subtitle: ''
+- scope:
+    path: ''
+    type: contacts
+  values:
+    role: ''
+    phone: ''
+    email: ''
+address: 19–21 Johnston St<br/>Collingwood, VIC, 3065
+phone: 0312 3456 7890
+email: sales@archetypemedia.com.au
+copyright: Archetype Media<br/>Copyright &copy; 2017
 livereload: true
 permalink: pretty
+exclude:
+- Gruntfile.js
+- webpack.config.js
+- Gemfile.lock
+- Gemfile
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+- assets/scripts/src
+- yarn.lock
+- ".git"
+gems:
+- jekyll-seo-tag
+- jekyll-sitemap
+sass:
+  sass_dir: assets/styles/
+  style: compressed

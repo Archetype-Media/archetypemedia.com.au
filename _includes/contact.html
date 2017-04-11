@@ -1,0 +1,11 @@
+<form action="https://formspree.io/{{ include.email }}" method="POST">
+  <div class="mb-2 overflow-hidden flex sm-block">
+    <input class="input col-5 mr-1 sm-col-10 sm-mb-2 sm-mr-0" placeholder="Name" required name="Name"></input>
+    <input class="input col-5 ml-1 sm-col-10 sm-ml-0" placeholder="Email" type="email" required name="Email"></input>
+  </div>
+  <div class="mb-2">
+    <textarea class="textarea" placeholder="Message" required name="Message"></textarea>
+  </div>
+  <input type="hidden" name="_next" value="/thanks" />
+  <button type="submit" class="button">Submit</button>
+</form>

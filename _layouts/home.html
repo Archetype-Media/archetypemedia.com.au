@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="my-5">
+  {% include headline.html headline=page.headline_text %}
+</div>
+{% include feature.html video=page.showreel %}
+<div class="py-5" id="network">
+  {% include headline.html headline=page.network_description %}
+  <!-- {% include blocks.html %} -->
+  {% assign publishers = site.publishers | sort: 'position' %}
+  {% include logos.html logos=publishers %}
+</div>
+<div class="py-5 bg-blue" id="partners">
+  {% include headline.html headline=page.partners_description inverted=true %}
+  <!-- {% include blocks.html %} -->
+  {% assign partners = site.partners | sort: 'position' %}
+  {% include logos.html logos=partners %}
+</div>
+<div class="py-5" id="contact">
+  {% include headline.html headline=page.contact_description %}
+  <div class="px-col-1 lg-px-col-2 pb-4" id="contact">
+    {% include contact.html email=site.email %}
+  </div>
+</div>
