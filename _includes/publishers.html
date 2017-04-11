@@ -1,9 +1,0 @@
-<div class="column partners__publications">
-  <h2 class="subhead">Top 25 Sites</h2>
-  <ul class="partners__list">
-    {% assign publishers = site.publishers | sort: 'listing-priority' %}
-    {% for publisher in publishers %}
-      <li><a href="{{ publisher.link }}">{{ publisher.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>

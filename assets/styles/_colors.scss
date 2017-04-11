@@ -1,0 +1,24 @@
+$colors: (
+  "blue": #0100FF,
+  "purple": #33323B,
+  "gray": #848388,
+  "white": #FFFFFF,
+);
+
+@mixin classes($colors) {
+  @each $name, $value in $colors {
+    .#{$name} {
+      color: $value;
+    }
+    .bg-#{$name} {
+      background-color: $value;
+    }
+  }
+}
+
+@include classes($colors);
+@each $bp-prefix, $size in $breakpoints {
+  @media #{$size} {
+    @include classes($colors);
+  }
+}

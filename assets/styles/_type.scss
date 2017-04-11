@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url('/assets/fonts/apercu-bold.woff');
+}
+
+$fontsize-1: 6.4rem;
+$fontsize-2: 3.2rem;
+$fontsize-3: 2rem;
+
+$lineheight-1: 8rem;
+$lineheight-2: 4.6rem;
+$lineheight-3: 3.2rem;
+
+$classes: (
+  f1: (
+    font-size: $fontsize-1,
+    line-height: $lineheight-1,
+  ),
+  f2: (
+    font-size: $fontsize-2,
+    line-height: $lineheight-2
+  ),
+  f3: (
+    font-size: $fontsize-3,
+    line-height: $lineheight-3,
+  ),
+  bold: (font-weight: bold),
+  center: (text-align: center),
+  right: (text-align: right),
+  left: (text-align: left),
+  no-underline: (text-decoration: none),
+);
+
+.headline em {
+  font-style: normal;
+  color: map-get($colors, 'gray');
+}
+
+@include all-sizes($classes)
