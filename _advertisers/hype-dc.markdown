@@ -1,6 +1,6 @@
 ---
 title: Hype DC
 date: 2017-02-03 18:16:00 +11:00
-position: 7
+position: 3
 ---
 
