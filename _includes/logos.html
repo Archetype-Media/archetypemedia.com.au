@@ -2,7 +2,7 @@
   <div class="flex justify-between flex-wrap fill-x">
     {% for logo in include.logos | limit: 16 %}
       <div class="logo-col px-1 mb-2">
-        <div class="ar1x1 bg-contain bg-center" style="background-image: url('{{ logo.image }}')">
+        <div class="ar1x1 bg-contain bg-center" style="background-image: url('{{ logo.image }}');background-size:50%">
         </div>
       </div>
     {% endfor %}
