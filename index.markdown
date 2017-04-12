@@ -9,7 +9,7 @@ partners_description: 'Our partners. *Archetype Media has worked with a wide var
 network_description: Our network. *The Archetype Media network comprises over 100
   websites spanning music, sport, sneakers, entertainment, gaming, style, art & design
   and more.*
-contact_description: Contact us. We'll be in touch*.*
+contact_description: Contact us. *We'll be in touch.*
 layout: home
 ---
 
