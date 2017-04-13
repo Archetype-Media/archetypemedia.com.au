@@ -5,6 +5,14 @@ $classes: (
   inline-block: (display: inline-block),
   absolute: (position: absolute),
   relative: (position: relative),
+  fixed: (position: fixed),
+  sticky: (
+    "position": -webkit-sticky,
+    "position ": -moz-sticky,
+    "position  ": -ms-sticky,
+    "position   ": -o-sticky,
+    "position    ": sticky,
+  ),
   align-baseline: (vertical-align: baseline),
   align-top: (vertical-align: top),
   align-middle: (vertical-align: middle),
@@ -16,6 +24,8 @@ $classes: (
   left-0: (left: 0),
   right-0: (right: 0),
   fill-x: (min-width: 100%),
+  fill-vh: (min-height: 100vh),
+  z-1: (z-index: 1),
 );
 
 @include all-sizes($classes);

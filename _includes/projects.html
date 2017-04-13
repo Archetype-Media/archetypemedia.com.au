@@ -1,0 +1,10 @@
+<div class="overflow-hidden mx-n1 fill-x flex sm-block px-col-1 lg-px-col-2 mb-5">
+  <div class="flex justify-between flex-wrap fill-x">
+    {% for project in include.projects | limit: 3 %}
+      <div class="project-col px-1 mb-2">
+        <div class="ar16x9 bg-cover bg-center" style="background-image: url('{{ project.image }}');%">
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

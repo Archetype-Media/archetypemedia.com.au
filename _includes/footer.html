@@ -1,0 +1,15 @@
+    <div class="overflow-hidden col-10 px-col-1 lg-px-col-2 bg-purple py-4 f3 sm-f2">
+      <div class="col sm-col-10 sm-mb-3 sm-mr-0 mr-2" style="width: 13rem; height: 6.5rem">
+        {% include svg/logo-white.svg %}
+      </div>
+      <div class="col sm-col-10 sm-mb-3 sm-ml-0 col-2 ml-2 white">
+        {{ site.address }}
+      </div>
+      <div class="col sm-col-10 sm-mb-3 sm-ml-0 col-3 ml-2 white">
+        T: <a class="white no-underline" href="tel:{{ site.phone }}">{{ site.phone }}</a><br/>
+        E: <a class="white" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+      <div class="col sm-col-10 sm-mb-3 sm-mr-0 col-right white">
+        {{ site.copyright }}
+      </col>
+    </div>
