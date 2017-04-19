@@ -1,0 +1,16 @@
+<div class="overflow-hidden mx-n1 fill-x flex sm-block px-col-1 lg-px-col-2">
+  <div class="flex">
+    {% for item in include.items %}
+      <div class="list-col px-1 mb-2">
+        {% if item.link %}
+<!--         <a class="h3 no-underline" href="{{ item.link }}">
+ -->        {% endif %}
+          {{ item.title }}
+        {% if item.link %}
+<!--         </a>
+ -->        {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

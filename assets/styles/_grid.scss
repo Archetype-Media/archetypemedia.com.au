@@ -75,6 +75,14 @@ $classes: (
   }
 }
 
+.list-col {
+  width: calc(100% / 4);
+
+  @media #{$breakpoint-sm} {
+    width: calc(100% / 1);
+  }
+}
+
 .contact-col {
   width: calc(100% / 4);
 
