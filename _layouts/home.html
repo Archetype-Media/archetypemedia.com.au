@@ -14,14 +14,13 @@ layout: default
 <div class="fill-vh overflow-hidden flex flex-column" id="network">
   <div class="my-auto py-5">
     {% include headline.html headline=page.network_description %}
-    <!-- {% include blocks.html %} -->
     {% assign publishers = site.publishers | sort: 'position' %}
-    <!-- {% include logos.html logos=publishers %} -->
+    {% include lists.html items=publishers %}
   </div>
 </div>
-<div class="fill-vh overflow-hidden flex flex-column bg-blue" id="partners">
+<div class="fill-vh overflow-hidden flex flex-column bg-blue" id="work">
   <div class="my-auto py-5">
-    {% include headline.html headline=page.partners_description inverted=true %}
+    {% include headline.html headline=page.work_description inverted=true %}
     <!-- {% include blocks.html %} -->
     {% assign work = site.work | sort: 'position' %}
     {% include projects.html projects=work %}
