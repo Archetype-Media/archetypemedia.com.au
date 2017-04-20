@@ -74,3 +74,27 @@ $classes: (
     width: calc(100% / 2);
   }
 }
+
+.list-col {
+  width: calc(100% / 4);
+
+  @media #{$breakpoint-sm} {
+    width: calc(100% / 1);
+  }
+}
+
+.contact-col {
+  width: calc(100% / 4);
+
+  @media #{$breakpoint-sm} {
+    width: calc(100% / 1);
+  }
+}
+
+.project-col {
+  width: calc(100% / 3);
+
+  @media #{$breakpoint-sm} {
+    width: calc(100% / 1);
+  }
+}
