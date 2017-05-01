@@ -14,6 +14,14 @@ $colors: (
     .bg-#{$name} {
       background-color: $value;
     }
+
+    .fill-#{$name}{
+      fill: $value;
+    }
+
+    .fill-half-#{$name}{
+      fill: rgba($value, 0.5);
+    }
   }
 }
 

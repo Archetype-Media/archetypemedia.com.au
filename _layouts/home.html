@@ -8,20 +8,16 @@ layout: default
     {% include headline.html headline=page.headline_text %}
   </div>
 </div>
-<div class="overflow-hidden bg-blue">
-  {% include feature.html video=page.showreel %}
-</div>
-<div class="fill-vh overflow-hidden flex flex-column" id="network">
+
+<div class="fill-vh overflow-hidden flex flex-column bg-blue" id="network">
   <div class="my-auto py-5">
-    {% include headline.html headline=page.network_description %}
-    {% assign publishers = site.publishers | sort: 'position' %}
-    {% include lists.html items=publishers %}
+    {% include headline.html headline=page.network_description inverted=true %}
   </div>
 </div>
-<div class="fill-vh overflow-hidden flex flex-column bg-blue" id="work">
+<div class="fill-vh overflow-hidden flex flex-column" id="work">
   <div class="my-auto py-5">
-    {% include headline.html headline=page.work_description inverted=true %}
-    <!-- {% include blocks.html %} -->
+    {% include headline.html headline=page.work_description %}
+      <!-- {% include blocks.html %} -->
     {% assign work = site.work | sort: 'position' %}
     {% include projects.html projects=work %}
   </div>
