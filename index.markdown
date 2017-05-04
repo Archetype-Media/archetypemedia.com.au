@@ -12,5 +12,18 @@ network_description: Our network. *The Archetype Media network comprises over 10
   and more.*
 contact_description: Contacts
 layout: home
+flag:
+  image: "https://images.apple.com/v/mac/home/v/images/home/macos_finder_icloud_large.png"
+  title: Desktop
+  description: Archetype Media is a branded content network. We work with the world’s leading publishers to connect brands and people alike
+  destination: "http://google.com"
+  call_to_action: Do a thing
+  reverse: false
+flag_reverse:
+  image: "https://images.apple.com/v/mac/home/v/images/home/macos_finder_icloud_large.png"
+  title: Desktop
+  description: Archetype Media is a branded content network. We work with the world’s leading publishers to connect brands and people alike
+  destination: "http://google.com"
+  call_to_action: Do a thing
+  reverse: true
 ---
-

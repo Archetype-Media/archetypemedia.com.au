@@ -6,25 +6,28 @@ $colors: (
 "white": #FFFFFF,
 "light-gray": #EBEAEB,
 );
+
 @mixin classes($colors) {
-@each $name, $value in $colors {
-.#{$name} {
-color: $value;
+  @each $name, $value in $colors {
+    .#{$name} {
+      color: $value;
+    }
+    .bg-#{$name} {
+      background-color: $value;
+    }
+    .fill-#{$name}{
+      fill: $value;
+    }
+    .fill-half-#{$name}{
+      fill: rgba($value, 0.5);
+    }
+  }
 }
-.bg-#{$name} {
-background-color: $value;
-}
-.fill-#{$name}{
-fill: $value;
-}
-.fill-half-#{$name}{
-fill: rgba($value, 0.5);
-}
-}
-}
+
 @include classes($colors);
+
 @each $bp-prefix, $size in $breakpoints {
-@media #{$size} {
-@include classes($colors);
-}
+  @media #{$size} {
+    @include classes($colors);
+  }
 }
