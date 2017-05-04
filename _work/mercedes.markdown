@@ -6,11 +6,8 @@ categories:
 tags:
 - insider
 position: 0
-video: https://vimeo.com/184466019/2bd3f5b407
 link: https://vimeo.com/184466019/2bd3f5b407
-call_to_action: View on Vimeo
-image: "/uploads/laptop.png"
+image: "/uploads/Screen%20Shot%202017-04-19%20at%203.04.17%20pm.png"
 subtitle: Action Hero featuring Ta-Ku
 ---
 
-Here I am here I am, the Method Man. I'm kicking like Seagal, Out for Justice. But I wish I had a chance to sing these three words. That's right motherfucker don't hold me. I don't give a fuck yo, the drama never ends. we burn so sweet. While my pen blow lines ferocious.
