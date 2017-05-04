@@ -16,10 +16,10 @@ layout: default
     {% include projects.html projects=work %}
   </div>
 </div>
-<div class="fill-vh overflow-hidden flex flex-column" id="contact">
+<div class="fill-vh overflow-hidden flex flex-column bg-blue white" id="contact">
   <div class="my-auto py-5">
-    {% include headline.html headline=page.contact_description %}
-    <div class="px-col-1 lg-px-col-2 pb-4" id="contact">
+    {% include headline.html headline=page.contact_description inverted=true %}
+    <div class="px-col-1 lg-px-col-2 pb-4 white" id="contact">
       {% include contacts.html contacts=site.contacts %}
     </div>
   </div>
