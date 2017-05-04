@@ -1,5 +1,5 @@
 ---
-title: Nike Tech Fleece 2016
+title: Nike Tech Fleece
 date: 2017-04-10 12:41:00 +10:00
 categories:
 - spectrum experience
