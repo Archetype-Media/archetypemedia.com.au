@@ -7,7 +7,7 @@ tags:
 - insider
 position: 0
 link: https://vimeo.com/184466019/2bd3f5b407
-image: "/uploads/Screen%20Shot%202017-04-19%20at%203.04.17%20pm.png"
+image: "/uploads/laptop.png"
 subtitle: Action Hero featuring Ta-Ku
 ---
 
