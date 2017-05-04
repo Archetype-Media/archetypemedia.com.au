@@ -5,7 +5,6 @@ categories:
 - sales
 position: 3
 role: Account Executive
-phone: "+61 (0) 402 844 617"
 email: josh@archetypemedia.com.au
 ---
 
