@@ -23,9 +23,11 @@
       <div class="f3 dark_gray mb-4 lg-col-12">
         {{ include.content.content }}
       </div>
-      <a class="f3 button col-9 sm-col-14" href={{ include.content.link }}>
+      {% if include.content.link and include.content.call_to_action %}
+      <a class="f3 button col-9 sm-col-14" href="{{ include.content.link }}" target="blank">
         {{ include.content.call_to_action }}
       </a>
+      {% endif %}
     </div>
   </div>
 </div>
