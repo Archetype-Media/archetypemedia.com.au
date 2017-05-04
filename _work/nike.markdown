@@ -5,7 +5,7 @@ categories:
 - spectrum experience
 position: 2
 link: http://au.complex.com/sports/beyond-the-arena-robbie-gray-casey-foley-kim-ravaillion
-image: "/uploads/robbie-gray.png"
+image: "/uploads/ipad.png"
 subtitle: 'Beyond The Arena '
 call_to_action: Read on Complex
 ---
