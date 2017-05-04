@@ -9,24 +9,4 @@ layout: default
   </div>
 </div>
 
-<div class="fill-vh overflow-hidden flex flex-column bg-blue" id="network">
-  <div class="my-auto py-5">
-    {% include headline.html headline=page.network_description inverted=true %}
-  </div>
-</div>
-<div class="fill-vh overflow-hidden flex flex-column" id="work">
-  <div class="my-auto py-5">
-    {% include headline.html headline=page.work_description %}
-      <!-- {% include blocks.html %} -->
-    {% assign work = site.work | sort: 'position' %}
-    {% include projects.html projects=work %}
-  </div>
-</div>
-<div class="fill-vh overflow-hidden flex flex-column" id="contact">
-  <div class="my-auto py-5">
-    {% include headline.html headline=page.contact_description %}
-    <div class="px-col-1 lg-px-col-2 pb-4" id="contact">
-      {% include contacts.html contacts=site.contacts %}
-    </div>
-  </div>
-</div>
+
