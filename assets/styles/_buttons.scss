@@ -1,10 +1,21 @@
 $classes: (
   button: (
-    padding: nth($spacings, 2) nth($spacings, 3),
+    padding: nth($spacings, 2) 0,
     font-size: $fontsize-2,
     line-height: $lineheight-2,
-    background-color: map-get($colors, 'blue'),
-    color: map-get($colors, 'white'),
+    color: map-get($colors, 'blue'),
+    text-decoration: none,
+  ),
+  "button:after": (
+    content: "",
+    display: inline-block,
+    width: 2.2rem,
+    height: 2.2rem,
+    margin-left: 0.5rem,
+    background-image: url('/assets/images/arrow-right.svg'),
+    background-repeat: no-repeat,
+    background-position: center,
+    background-size: contain,
   ),
 );
 

@@ -1,0 +1,31 @@
+{% if include.reverse == 'true' %}
+  {% assign class="col-10 pl-col-1 lg-pl-col-2 sm-px-col-1 ma-auto flex sm-block justify-between py-5 sm-py-3 sm-overflow-hidden flex-reverse" %}
+{% else %}
+  {% assign class="col-10 pr-col-1 lg-pr-col-2 sm-px-col-1 ma-auto flex sm-block justify-between py-5 sm-py-3 sm-overflow-hidden" %}
+{% endif %}
+<div class="fill-x flex">
+  <div class="{{ class }}">
+    <div class="col col-6 flex-auto sm-col-10 sm-mb-3 relative">
+      <img class="col-10 block" src="{{ include.content.image }}" />
+      {% if include.content.video %}
+        <div class="ar16x9 bg-dark-gray absolute overflow-hidden" style="top: 21.5%; left: 15.3%; right: 15.3%;">
+          <iframe src="{{ include.content.video }}" width="100%" height="100%" class="bg-blue top-0 left-0 right-0 bottom-0 absolute" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      {% endif %}
+    </div>
+    <div class="col col-4 flex-auto sm-col-10 my-auto">
+      <div class="f1 dark_gray">
+        {{ include.content.title }}
+      </div>
+      <div class="f2 gray mb-2 lg-col-12">
+        {{ include.content.subtitle }}
+      </div>
+      <div class="f3 dark_gray mb-4 lg-col-12">
+        {{ include.content.content }}
+      </div>
+      <a class="button col-9 sm-col-14" href={{ include.content.link }}>
+        {{ include.content.call_to_action }}
+      </a>
+    </div>
+  </div>
+</div>

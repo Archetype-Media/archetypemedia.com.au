@@ -1,9 +1,10 @@
 $colors: (
-  "blue": #0100FF,
-  "purple": #33323B,
-  "gray": #848388,
-  "white": #FFFFFF,
-  "light-gray": #EBEAEB,
+"blue": #0100FF,
+"dark-gray": #33323B,
+"black": #000000,
+"gray": #848388,
+"white": #FFFFFF,
+"light-gray": #EBEAEB,
 );
 
 @mixin classes($colors) {
@@ -14,10 +15,17 @@ $colors: (
     .bg-#{$name} {
       background-color: $value;
     }
+    .fill-#{$name}{
+      fill: $value;
+    }
+    .fill-half-#{$name}{
+      fill: rgba($value, 0.5);
+    }
   }
 }
 
 @include classes($colors);
+
 @each $bp-prefix, $size in $breakpoints {
   @media #{$size} {
     @include classes($colors);

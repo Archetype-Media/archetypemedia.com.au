@@ -16,3 +16,14 @@
 @import 'forms';
 @import 'shapes';
 // @import 'debug';
+
+::selection {
+  background: #0100FF; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #0100FF; /* Gecko Browsers */
+  color: #fff;
+  text-decoration-color: #fff;
+}

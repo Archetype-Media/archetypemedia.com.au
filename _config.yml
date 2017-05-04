@@ -39,6 +39,8 @@ defaults:
     link: ''
     image: ''
     subtitle: ''
+    video: ''
+    call_to_action: ''
 - scope:
     path: ''
     type: publishers
