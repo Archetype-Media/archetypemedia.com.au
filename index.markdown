@@ -11,7 +11,7 @@ work_description: 'Our work. *Archetype Media has worked with a wide variety of 
 network_description: Our network. *The Archetype Media network comprises over 100
   websites spanning music, sport, sneakers, entertainment, gaming, style, art & design
   and more.*
-contact_description: Our people.
+contact_description: Contacts
 layout: home
 ---
 
