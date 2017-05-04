@@ -6,7 +6,7 @@ categories:
 tags:
 - insider
 position: 0
-link: https://vimeo.com/184466019/2bd3f5b407
+video: https://player.vimeo.com/video/184466019?color=0100FF&title=false&portrait=false&byline=false
 image: "/uploads/laptop-7fd41d.png"
 subtitle: Action Hero featuring Ta-Ku
 ---
