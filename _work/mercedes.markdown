@@ -13,3 +13,4 @@ video: https://player.vimeo.com/video/184466019?color=0100FF&title=false&portrai
 call_to_action: Watch on Vimeo
 ---
 
+"Doo-doo-doo-doo-doo!" That's a audio daily double. So what when he grab the mic he crush your cute cuticles. Mister Fantastik, long dough like elastic. Or motherfuckin' mother goose. Hawk men stalkin' hear that we hawkin' often. A lot of guys wonder where they stacks went.
