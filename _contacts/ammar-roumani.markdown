@@ -5,7 +5,6 @@ categories:
 - sales
 position: 2
 role: Ad Operations
-phone: "+61 (0) 402 844 617"
 email: ammar@archetypemedia.com.au
 ---
 
