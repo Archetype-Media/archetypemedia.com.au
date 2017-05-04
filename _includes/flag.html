@@ -15,10 +15,10 @@
     </div>
     <div class="col col-4 flex-auto sm-col-10 my-auto">
       <div class="f1 dark_gray">
-        {{ include.content.title }}
+        {{ include.content.title | smartify }}
       </div>
       <div class="f2 gray mb-2 lg-col-12">
-        {{ include.content.subtitle }}
+        {{ include.content.subtitle | smartify }}
       </div>
       <div class="f3 dark_gray mb-4 lg-col-12">
         {{ include.content.content }}

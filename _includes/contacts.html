@@ -3,8 +3,8 @@
     {% assign contacts = include.contacts | sort: 'position' %}
     {% for contact in contacts %}
       <a class="contact-col px-1 mb-2 flex-auto no-underline sm-mb-3" href="mailto:{{ site.email }}">
-        <div class="white f2 sm-f1">{{ contact.title }}</div>
-        <div class="white f5 sm-f1 uppercase tracking-loose">{{ contact.role }}</div>
+        <div class="white f2 sm-f1">{{ contact.title | smartify }}</div>
+        <div class="white f5 sm-f1 uppercase tracking-loose">{{ contact.role | smartify }}</div>
         <div class="white f4 sm-f1">{{ contact.email }}</div>
       {% if contact.phone %}
         <div class="white f4 sm-f1">{{ contact.phone }}</div>
