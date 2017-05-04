@@ -1,14 +1,4 @@
-
 {% for project in include.projects | limit: 3 %}
-<div class="overflow-hidden mx-n1 fill-x flex sm-block px-col-1 lg-px-col-2 mb-5">
-  <div class="flex justify-between flex-wrap fill-x">
-    
-      <div class="project-col px-1 mb-2">
-        <div class="ar16x9 bg-cover bg-center" style="background-image: url('{{ project.image }}');%">
-        </div>
-      </div>
-    
-  </div>
-</div>
-
+  {% capture reverse %}{% cycle true, false %}{% endcapture %}
+  {% include flag.html content=project reverse=reverse %}
 {% endfor %}
