@@ -18,7 +18,7 @@ collections:
     title: Uploads
     output: true
   work:
-    title: Work
+    title: Works
     output: false
 defaults:
 - scope:
@@ -39,8 +39,15 @@ defaults:
     link: ''
     image: ''
     subtitle: ''
-    video: ''
-    call_to_action: ''
+    background_video_link: ''
+    video_1_link: ''
+    video_1_call_to_action: ''
+    video_2_link: ''
+    video_2_call_to_action: ''
+    article_1_link: ''
+    article_1_call_to_action: ''
+    article_2_link: ''
+    article_2_call_to_action: ''
 - scope:
     path: ''
     type: publishers
@@ -61,8 +68,9 @@ defaults:
     phone: ''
     email: ''
 address: 19–21 Johnston St<br/>Collingwood, VIC, 3065
-phone: 0312 3456 7890
+phone: "(03) 9419 3328"
 email: sales@archetypemedia.com.au
+map: https://goo.gl/maps/otwYyqj4CPK2
 copyright: Archetype Media<br/>Copyright &copy; 2017
 livereload: true
 permalink: pretty
