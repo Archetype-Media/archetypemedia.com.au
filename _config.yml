@@ -68,9 +68,9 @@ defaults:
     phone: ''
     email: ''
 address: 19–21 Johnston St<br/>Collingwood, VIC, 3065
-phone: '(03) 9419 3328'
+phone: "(03) 9419 3328"
 email: sales@archetypemedia.com.au
-map: 'https://goo.gl/maps/otwYyqj4CPK2'
+map: https://goo.gl/maps/otwYyqj4CPK2
 copyright: Archetype Media<br/>Copyright &copy; 2017
 livereload: true
 permalink: pretty
