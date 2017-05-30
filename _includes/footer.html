@@ -3,7 +3,9 @@
         {% include svg/logo-only.svg inverted=true %}
       </div>
       <div class="col sm-col-10 sm-mb-3 sm-ml-0 col-2 ml-2 white">
-        {{ site.address }}
+        <a href="{{ site.map }}" target="_blank">
+          {{ site.address }}
+        </a>
       </div>
       <div class="col sm-col-10 sm-mb-3 sm-ml-0 col-3 ml-2 white">
         T: <a class="white no-underline" href="tel:{{ site.phone }}">{{ site.phone }}</a><br/>

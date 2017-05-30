@@ -10,7 +10,9 @@ work_description: Our work
 network_description: Our network. *The Archetype Media network comprises over 100
   websites spanning music, sport, sneakers, entertainment, gaming, style, art & design
   and more.*
-contact_description: Contacts
+offering_description: 'The Reach You Need. The Audience You Want. *Archetype Media connects marketers to Australia’s most influential audiences across digital, mobile, print, social platforms and live events. Archetype Media offers unparalleled advertising opportunities for brands looking to reach high-quality consumers via best-in-class publishers, and world leading branded content.*'
+audience_description: 'Surrender the stereotype: it’s about audience affiliations not generalisations. *Sweeping statements about generational groups (see: Millennials) will get you nowhere. We believe that experiences, motivations and interests are what truly connect (and distinguish) different audiences, not age or social demographics.*'
+contact_description: Contact Us
 layout: home
 ---
 

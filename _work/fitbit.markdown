@@ -4,10 +4,10 @@ date: 2017-04-10 12:41:00 +10:00
 categories:
 - spectrum experience
 position: 1
-link: http://au.complex.com/sports/jason-johannisen-working-to-schedule
 image: "/uploads/iphone.png"
-subtitle: Jason Johannisen / Working To Schedule
-call_to_action: Read on Complex
+subtitle: 'Jason Johanissen: Working to Schedule'
+article_1_link: http://au.complex.com/sports/jason-johannisen-working-to-schedule
+article_1_call_to_action: 'Read: "Working To Schedule" on Complex'
 ---
 
-Here I am here I am, the Method Man. I'm kicking like Seagal, Out for Justice. But I wish I had a chance to sing these three words. That's right motherfucker don't hold me. I don't give a fuck yo, the drama never ends. we burn so sweet. While my pen blow lines ferocious.
+Archetype Media partnered with Fitbit for the release of the Charge 2. Working with AFL star Jason Johanissen we explored what he does day to day to perform at his best. The story was told through our innovative native content unit, the Brand Spectrum Experience, and distributed via Complex Australia.
